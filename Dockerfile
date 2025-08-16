@@ -1,10 +1,14 @@
-FROM maven:3.9.9-eclipse-temurin-17 AS build
-WORKDIR /app
-COPY . .
-RUN mvn clean package -DskipTests
-
+# Tomcat 9 base image use karo
 FROM tomcat:9.0
+
+# Tomcat ke default apps delete karo (ROOT bhi)
 RUN rm -rf /usr/local/tomcat/webapps/*
-COPY --from=build /app/target/Interest.war /usr/local/tomcat/webapps/ROOT.war
+
+# Apni WAR file copy karo aur ROOT.war naam de do
+COPY target/Interest.war /usr/local/tomcat/webapps/ROOT.war
+
+# Port expose karo
 EXPOSE 8080
+
+# Tomcat start karo
 CMD ["catalina.sh", "run"]
