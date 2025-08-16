@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+ .blog{
+    
+    background-color:#080523 !important;
+    height: 1200px;
+    padding-top:50px;
+
+}
+
+
+.seth{
+    color: white;
+    font-weight:900;
+    font-size: 48px;
+    padding-left: 420px;
+    white-space: nowrap;
+   margin-bottom:55px;
+   
+}
+@media (max-width: 576px) { /* Mobile screen */
+    .seth h1 {
+        font-size: 30px; /* Mobile ke liye chhota size */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) { /* Tablet size */
+    .seth h1 {
+        font-size: 36px; /* Tablet ke liye medium size */
+    }
+}
+
+
+
+
+
+.formi{
+      
+      border: 2px solid orange;
+    border-radius: 15px;
+    width: 320px;
+    height: 480px;
+    text-align: center;
+    background: rgba(238, 174, 202, 0.2);
+   
+    
+   
+    }
+
+.shift{
+    color: whitesmoke;
+     margin-top: 6px ;
+     font-size: 24px;
+}
+
+.shifti{
+   margin-top: 2px;
+   height: 35px;
+   width: 300px;
+   border-radius: 8px;
+
+}
+
+.button{
+    margin-top: 20px;
+    height: 45px;
+    width: 240px;
+    background-color: skyblue;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font: bold;
+}
